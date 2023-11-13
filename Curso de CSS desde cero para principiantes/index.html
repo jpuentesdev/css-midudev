@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>
+      🧑‍💻 midudev portfolio - Software Engineer with 15 years of experience
+    </title>
+
+    <meta
+      name="description"
+      content="midudev portfolio, 15 years of experience as software engineer"
+    />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Software engineer portfolio" />
+    <meta
+      property="og:description"
+      content="midudev portfolio, 15 years of experience as software engineer"
+    />
+    <meta property="og:image" content="img/me.jpg" />
+    <meta property="og:image:alt" content="A photo of Miguel Ángel Durán" />
+
+    <link rel="alternate" href="https://midu.dev/en" hreflang="en-GB" />
+    <link rel="canonical" href="https://midu.dev" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09f" />
+
+    <link rel="icon" type="image/jpg" href="img/me.jpg" />
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>@midudev portfolio 🧑‍💻</h1>
+
+      <nav>
+        <a href="#experience" class="link">Experience</a>
+        <a href="#projects" class="link">Projects</a>
+        <a href="http://twitch.tv/midudev" target="_blank" rel="noreferrer" class="link">
+          Twitch
+        </a>
+      </nav>
+    </header>
+
+    <dialog id="dialog">
+      <h1>Do you know that you can open a modal like this?</h1>
+      <p>It is totally native!</p>
+      <button id="hide">Close Modal</button>
+    </dialog>
+
+    <button id="show">View More Info</button>
+
+    <script>
+      window.show.addEventListener('click', () => {
+        window.dialog.showModal();
+      });
+
+      window.hide.addEventListener('click', () => {
+        window.dialog.close();
+      });
+    </script>
+
+    <main>
+      <p>
+        +15 years of experience as <strong>Software Engineer</strong>. Creator
+        and disseminator of programming
+      </p>
+
+      <h2 id="experience">Experience</h2>
+
+      <ul>
+        <li class="list-item">Adevinta - 2022</li>
+        <li class="list-item">Hubbi - 2020</li>
+        <li class="list-item">Nacencia - 2015</li>
+      </ul>
+
+      <a download href="/images/me.jpg">
+        <img
+          id="photo-image"
+          src="img/me.jpg"
+          alt="A photo of Migue Ángel Durán smiling and watching the camera with hands crossed"
+          title="Photo of midudev"
+          width="200"
+          height="200"
+        />
+      </a>
+
+      <h2 id="projects">Made projects</h2>
+
+      <aside>
+        <header>
+          <h3>My <span>favorite</span> technologies</h3>
+        </header>
+        <ol type="1" reversed start="10">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li value="5">JavaScript</li>
+          <li>Node.js</li>
+        </ol>
+      </aside>
+
+      <button>Click here</button>
+
+      <section>
+        <article>
+          <header>
+            <h4>Tesla Website</h4>
+            <img
+              src="img/tesla.png"
+              alt="Screenshot of Tesla website"
+              loading="lazy"
+              style="width: 100%; aspect-ratio: 1896/827"
+            />
+          </header>
+          <p>
+            Development of a corporate website with friendly and modern
+            interface.
+          </p>
+          <footer>
+            <small>Used technologies HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+
+        <article>
+          <header>
+            <h4>Corporate Website</h4>
+          </header>
+          <p>
+            Development of a corporate website with friendly and modern
+            interface.
+          </p>
+          <footer>
+            <small>Used technologies HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+
+        <article>
+          <header>
+            <h4>Corporate Website</h4>
+          </header>
+          <p>
+            Development of a corporate website with friendly and modern
+            interface.
+          </p>
+          <footer>
+            <small>Used technologies HTML, CSS, JavaScript</small>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <h2>FAQ</h2>
+
+        <details open>
+          <summary>What studies do you have?</summary>
+          <p>
+            I studied on Vilanova College a Computer Engineering for 5 years
+          </p>
+        </details>
+
+        <details>
+          <summary>What are your hobbies?</summary>
+          <p>
+            I like to play football, watch series and movies and play video
+            games
+          </p>
+        </details>
+
+        <details>
+          <summary>What is your favorite food?</summary>
+          <p>I love pizza and hamburguers</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Contact form</h2>
+
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Personal information</legend>
+
+            <div>
+              <label>
+                Name:
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Miguel Ángel Durán"
+                  required
+                />
+              </label>
+            </div>
+
+            <label>
+              Email:
+              <input
+                type="email"
+                name="email"
+                placeholder="midudev@gmail.com"
+                required
+              />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Aditional information</legend>
+
+            <div>
+              <label>
+                Phone:
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="0987654321"
+                  required
+                  pattern="[0-9]{10}"
+                />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Others</legend>
+
+            <div>
+              <label for="why">Why do you want to contact?</label>
+              <select name="why" id="why">
+                <option value="1">Work</option>
+                <option value="2">Doubt</option>
+                <option value="3">More info</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="terms">Do you accept the terms?</label>
+              <input type="checkbox" id="terms" name="terms" required />
+            </div>
+
+            <div>
+              <datalist id="languages">
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="C#"></option>
+              </datalist>
+              <label>
+                What language do you want me to help you with?
+                <input list="languages" name="language" />
+              </label>
+            </div>
+          </fieldset>
+
+          <button>Send Contact</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      Copyright © 2023 - The most beautiful portfolio in the world
+
+      <a href="mailto:miduga@gmail.com">Send me an email</a>
+      <a href="tel:+346888888899">Call by phone</a>
+      <a href="whatsapp://send?text=Hola midudev">Call by phone</a>
+    </footer>
+  </body>
+</html>
